@@ -1,0 +1,3 @@
+lm: llama2_peft
+lm_id: llama2_talkmove_tscc_v2_01
+lm_model_name_or_path: /home/vtrinh/misc/llm/llama2/talkmove_tscc_v2

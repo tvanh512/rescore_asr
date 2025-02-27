@@ -1,0 +1,14 @@
+# ASR configuration
+asr_model_name_or_path: openai/whisper-large-v2
+text_norm: custom # text_norm could be whisper or custom
+asr_generate_greedy_cfg:
+  max_new_tokens: 112
+  repetition_penalty: 1
+  do_sample: false
+asr_generate_beam_cfg:
+  num_beams: 16
+  num_return_sequences: 16
+  max_new_tokens: 112
+  repetition_penalty: 1
+  do_sample: false
+

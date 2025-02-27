@@ -1,0 +1,12 @@
+dataset_name: myst_csv
+dataset_config:
+  data_dir: /home/vtrinh/datasets/Corpora/myst-v0.4.2/data/test
+  split: test
+  num_samples: null
+  meta_csv: /home/vtrinh/datasets/Corpora/data_manifests/ASR/myst_test_corrected_all.csv
+  wavs_file_col: wav
+  labels_col: transcript
+  data_root: $DATAROOT/myst-v0.4.2/data/corrected_test
+
+# Output
+out_dir: /home/vtrinh/projects/ICASSP2024/myst/whisper_large_v2/myst_test_corrected_all

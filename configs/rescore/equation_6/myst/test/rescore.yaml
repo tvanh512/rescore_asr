@@ -1,0 +1,12 @@
+search_space: null # if don't use hyperparameter search, set search_space = null
+#asr_weight: 0.9245828020772924
+#lm_weight: 0.04670008228251351
+#short_penalty_weight: 0.12859641472969224
+#min_word: 1000.0
+#min_prob: 1.0
+load_params_from_search: true
+ax_json: null
+hyp_search: false
+asr_model_name_or_path : openai/whisper-large-v2
+language : english
+

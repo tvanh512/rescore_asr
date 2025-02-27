@@ -1,0 +1,16 @@
+# Hyperparameter search configs:
+# search_space could be any name
+search_space: 1
+asr_lower_bound: 0
+asr_upper_bound: 1
+lm_lower_bound: 0
+lm_upper_bound: 1
+short_lower_bound: 0
+short_upper_bound: 1
+min_word: 1000
+min_prob: 1
+num_trials: 50
+hyp_search: true
+log_scale: false
+asr_model_name_or_path : openai/whisper-large-v2
+language : english

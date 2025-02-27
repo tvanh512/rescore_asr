@@ -1,0 +1,31 @@
+root_cfg: /home/vtrinh/projects/rescore_asr/configs
+decode_asr_cfg: asr/whisper_large_v2_01.yaml
+# The name of yaml file in lm_cfg should contain enough information to
+# about the specified LM, which will be different than other lm
+lm_cfg: lm/llama2/llama2_isat_levi_myst_talkmove_tscc_v2_01.yaml
+equation: 6
+
+train: 
+  # All possible steps: decode, lm_score, hyper_params_search, rescore 
+  skip: true
+dev:
+  skip: false
+  decode: false
+  lm_score: false
+  rescore: true
+  decode_dataset_cfg: decode/myst/dev/myst_original_dev.yaml
+  rescore_cfg: rescore/equation_6/myst/dev/rescore.yaml
+test:
+  skip: false
+  decode: false
+  lm_score: false
+  rescore: true
+  decode_dataset_cfg: decode/myst/test/myst_test_uncorrected.yaml
+  rescore_cfg: rescore/equation_6/myst/test/rescore.yaml
+test_corrected:
+  skip: false
+  decode: false
+  lm_score: false
+  rescore: true
+  decode_dataset_cfg: decode/myst/test/myst_test_corrected_all.yaml
+  rescore_cfg: rescore/equation_6/myst/test/rescore.yaml

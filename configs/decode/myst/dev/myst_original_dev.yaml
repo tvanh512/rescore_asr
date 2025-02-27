@@ -1,0 +1,9 @@
+dataset_name: myst_json
+dataset_config:
+  data_dir: /home/vtrinh/datasets/myst-v0.4.2
+  split: valid
+  num_samples: null
+  json_path: /home/vtrinh/datasets/Corpora/data_manifests/ASR/wayne_json/myst
+  
+# Output
+out_dir: /home/vtrinh/projects/ICASSP2024/myst/whisper_large_v2/myst_original_dev

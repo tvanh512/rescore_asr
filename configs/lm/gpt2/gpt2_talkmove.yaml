@@ -1,0 +1,3 @@
+lm: gpt2
+lm_id: gpt2_talkmove_01
+lm_model_name_or_path: /home/vtrinh/misc/LEVI/exp/exp1_finetune_gpt2_talkmove_text
